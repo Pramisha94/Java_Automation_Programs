@@ -1,17 +1,19 @@
 package com.automation;
 
 import java.util.Scanner;
-
+//sum of n numbers using while loop
 public class Whileloop {
 public static void main(String[] args) {
-	int a,i,fact=1;
+	int i,sum=0;
 	Scanner sc=new Scanner(System.in);
 	System.out.print("Enter a value : ");
-	a=sc.nextInt();
-	for(i=1;i<=a;i++)
+	i=sc.nextInt();
+	while(i>0)
 	{
-		fact=fact*i;
+		sum=sum+i;
+		i--;
+		
 	}
-	System.out.println("Factorial :"+fact);
+	System.out.println("Sum is :"+sum);
 }
 }
